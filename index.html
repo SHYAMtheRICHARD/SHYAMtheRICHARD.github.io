@@ -1,49 +1,50 @@
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TADA</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Confetti Animation</title>
+  <style>
+    body {
+      height: 100dvh;
+      margin: 0;
+      background-image: linear-gradient(black, midnightblue);
+    }
+
+    div {
+      width: calc(.25em + 1.25em * var(--size));
+      height: calc(.25em + 1.25em * var(--size));
+      background-color: hsl(calc(var(--color) * 360) 100% 50%);
+      position: fixed;
+      top: -1.5em;
+      left: calc(3em + (100% - 6em) * var(--posX));
+      z-index: 99999;
+      animation:
+        confettoValt
+        calc(3s + 2s * var(--duration))
+        calc(var(--delay) * 3s)
+        linear;
+    }
+
+    @keyframes confettoValt {
+      0% {}
+      100% {
+        transform:
+          translateY(calc(100vh + 3em))
+          perspective(20em)
+          rotateY(calc(2turn + 4turn * var(--rotateY)))
+          translateZ(calc(1em + 3em * var(--turn)))
+          rotateX(calc(2turn + 4turn * var(--rotateX)))
+          rotateZ(calc(2turn + 4turn * var(--rotateZ)));
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
-
-    <main>
-        <h2>HII</h2>
-        <p>SUBTEXT GOES OVERHERE</p>
-        <a href="https://example.com">CLICKABLE</a>
-    </main>
-
-    <footer>
-        <p>FOR SUNTITLES</p>
-    </footer>
-
+  <!-- Generate some confetti manually -->
+  <div style="--size:1; --color:0.1; --posX:0.2; --duration:1; --delay:0.2; --rotateY:0.3; --rotateX:0.5; --rotateZ:0.7; --turn:0.2;"></div>
+  <div style="--size:1.2; --color:0.3; --posX:0.4; --duration:1.5; --delay:0.1; --rotateY:0.5; --rotateX:0.2; --rotateZ:0.8; --turn:0.3;"></div>
+  <div style="--size:0.9; --color:0.7; --posX:0.6; --duration:2; --delay:0.3; --rotateY:0.2; --rotateX:0.9; --rotateZ:0.6; --turn:0.5;"></div>
+  <div style="--size:1.1; --color:0.5; --posX:0.8; --duration:1; --delay:0.4; --rotateY:0.1; --rotateX:0.4; --rotateZ:0.9; --turn:0.4;"></div>
 </body>
 </html>
