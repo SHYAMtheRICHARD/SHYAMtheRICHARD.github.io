@@ -161,14 +161,14 @@ html {
   justify-content: center;
 }
 
-.hero-slide .carousel-item active text-center text-white d-flex align-items-center justify-content-center{
+.hero-slide .hero-blur {
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(8px) brightness(0.8);
+  filter: blur(8px) brightness(0.6);
   z-index: 1;
 }
 
@@ -210,23 +210,25 @@ html {
 <!--  HERO CAROUSEL SECTION -->
 	<section class="hero p-0">
   <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active text-center text-white d-flex align-items-center justify-content-center" style="min-height: 80vh; background: url('https://www.livechennai.com/businesslistings/News_photo/exam-000003114.jpg') center/cover no-repeat;">
-        <div class="container">
+    <div class="carousel-item active hero-slide">
+      <div class="hero-blur" style="min-height: 80vh; background: url('https://www.livechennai.com/businesslistings/News_photo/exam-000003114.jpg') center/cover no-repeat;">
+        <div class="container text-center text-white">
           <h1 class="fw-bold">Group II Exam Guidelines Released</h1>
           <p class="mb-3">The Instructions For Group II Exams Are Released today</p>
           <a href="https://www.tnpsc.gov.in/Document/english/08_2024_English.pdf" class="btn btn-warning">Click To View</a>
         </div>
        </div>
-      <div class="carousel-item text-center text-white d-flex align-items-center justify-content-center" style="min-height: 80vh; background: url('https://images.unsplash.com/photo-1531497865147-4c67a6e2bc58') center/cover no-repeat;">
-        <div class="container">
+	<div class="carousel-item active hero-slide">
+      <div class="hero-blur" style="min-height: 80vh; background: url('https://images.unsplash.com/photo-1531497865147-4c67a6e2bc58') center/cover no-repeat;">
+        <div class="container text-center text-white">
           <h1 class="fw-bold">Success Stories</h1>
           <p class="mb-3">Get inspired by officers who cracked the TNPSC exams.</p>
           <a href="#motivation" class="btn btn-warning">Meet the Officers</a>
         </div>
 	</div>
-      <div class="carousel-item text-center text-white d-flex align-items-center justify-content-center" style="min-height: 80vh; background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c') center/cover no-repeat;">
-        <div class="container">
+	<div class="carousel-item active hero-slide">
+      <div class="hero-blur" style="min-height: 80vh; background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c') center/cover no-repeat;">
+        <div class="container text-center text-white">
           <h1 class="fw-bold">Group II Exam Will Start Soon</h1>
           <p class="mb-3">Be upto date by catching the Latest notifications </p>
           <a href="#notifications" class="btn btn-warning">Notifications</a>
