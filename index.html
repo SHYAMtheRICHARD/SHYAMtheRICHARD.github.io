@@ -138,7 +138,9 @@ a.text-reset:hover .border {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
   </style>
 </head>
@@ -180,7 +182,7 @@ a.text-reset:hover .border {
 
     </div>
   </section>
-	<!-- ✅ QUICKLINKS SECTION -->
+	<!--  QUICKLINKS SECTION -->
 <section class="py-5 bg-white">
   <div class="container">
     <h2 class="text-center fw-bold text-primary mb-4">Quick Access</h2>
@@ -210,7 +212,7 @@ a.text-reset:hover .border {
         </a>
       </div>
       <div class="col-6 col-md-3">
-        <a href="#" class="text-decoration-none text-dark">
+        <a href="#notifications" class="text-decoration-none text-dark">
           <div class="border rounded p-4 shadow-sm h-100 quicklink-card">
             <i class="fas fa-bullhorn fa-2x text-primary mb-2"></i>
             <h6>Latest Notifications</h6>
@@ -252,7 +254,7 @@ a.text-reset:hover .border {
     </div>
   </section>
 <!-- 	notification and news -->
-	<section class="py-5 bg-light">
+	<section id="notifications" class="py-5 bg-light">
   <div class="container">
     <h2 class="text-center fw-bold text-primary mb-4">Latest Notifications</h2>
     <div class="row g-4">
