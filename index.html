@@ -141,6 +141,18 @@ a.text-reset:hover .border {
 html {
     scroll-behavior: smooth;
   }
+.hero .carousel-item {
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+.hero p {
+  font-size: 1.1rem;
+  color: #eee;
+}
+
 
   </style>
 </head>
@@ -171,17 +183,53 @@ html {
       </div>
     </div>
   </nav>
+	<!--  HERO CAROUSEL SECTION -->
+<section class="hero p-0">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center text-white d-flex align-items-center justify-content-center" style="min-height: 80vh; background: url('https://wallpaperaccess.com/full/9343716.jpg') center/cover no-repeat;">
+        <div class="container">
+          <h1 class="fw-bold">Group II Exam Extended</h1>
+          <p class="mb-3">New date: 10 July 2025. Download revised hall ticket now.</p>
+          <a href="#" class="btn btn-warning">View Notification</a>
+        </div>
+      </div>
+      <div class="carousel-item text-center text-white d-flex align-items-center justify-content-center" style="min-height: 80vh; background: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c') center/cover no-repeat;">
+        <div class="container">
+          <h1 class="fw-bold">One-Time Registration</h1>
+          <p class="mb-3">Register once and apply for multiple exams hassle-free.</p>
+          <a href="#" class="btn btn-warning">Register Now</a>
+        </div>
+      </div>
+      <div class="carousel-item text-center text-white d-flex align-items-center justify-content-center" style="min-height: 80vh; background: url('https://images.unsplash.com/photo-1531497865147-4c67a6e2bc58') center/cover no-repeat;">
+        <div class="container">
+          <h1 class="fw-bold">Success Stories</h1>
+          <p class="mb-3">Get inspired by officers who cracked the TNPSC exams.</p>
+          <a href="#" class="btn btn-warning">Meet the Officers</a>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
 
   <!-- HERO SECTION -->
-  <section class="hero">
+<!--   <section class="hero">
     <div class="container">
       <h1 style="color: white; font-weight: bold;">Start Your TNPSC Journey Today</h1>
-      <p style="color: white;">Apply for Group I, II, and IV services through a secure portal.</p>
-<!--       <a href="https://apply.tnpscexams.in/apply-now?app_id=UElZMDAwMDAwMQ==" class="btn btn-apply">Apply Now</a> -->
-	    <a href="#" class="btn btn-apply" data-bs-toggle="modal" data-bs-target="#loginModal">Apply Now</a>
+      <p style="color: white;">Apply for Group I, II, and IV services through a secure portal.</p> -->
+<!--      
+<!-- 	    <a href="#" class="btn btn-apply" data-bs-toggle="modal" data-bs-target="#loginModal">Apply Now</a>
 
     </div>
-  </section>
+  </section> -->
 	<!--  QUICKLINKS SECTION -->
 <section class="py-5 bg-white">
   <div class="container">
